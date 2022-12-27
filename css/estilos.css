@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: #e7e9ee;
+}
+.title{
+    width: 100%;
+    background: #639e71;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title h1{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+}
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.container__cards{
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 250px;
+    margin: 10px;
+    transition: all 300ms;
+   
+}
+
+.card:hover{
+    width: 300px;
+    border-width: solid 2px;
+}
+
+.card .cover{
+    width: 100%;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(167, 156, 156, 0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 300ms;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card:nth-of-type(1) .img__back{
+    background-image: url(../images/bg1.jpg);
+} 
+
+.card:nth-of-type(2) .img__back{
+    background-image: url(../images/bg2.jpg);
+}
+
+.card:nth-of-type(3) .img__back{
+    background-image: url(../images/bg3.jpg);
+}
+
+.card:nth-of-type(4) .img__back{
+    background-image: url(../images/bg1.jpg);
+} 
+.card:nth-of-type(5) .img__back{
+    background-image: url(../images/bg2.jpg);
+}
+.card:hover .img__back{
+    bottom: -40px; 
+}
+
+
+
+.card .description{
+    background: white;
+    margin-top: -10px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    transition: all 300ms;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -ms-border-radius: 0px 0px 10px 10px;
+    -o-border-radius: 0px 0px 10px 10px;
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+}
+
+.card .description p{
+    margin-top: 10px;
+}
+
+.card .description .btnVerMas{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: #A6359D;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card .description .btnVerMas:hover{
+    background: #64165e;
+}
+
+#contenedoRender {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    border: 2px solid rgb(141, 150, 149);
+    background-color: #fafafa;
+    width: 200px;
+    height: 350px;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 8px 5px 5px rgb(87, 86, 86);
+}
+  
+  .tarjeta img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .agreCarrito {
+    cursor: pointer;
+    margin-top:7px;
+    width: 140px;
+    height: 50px;
+    background: #A6359D;
+    text-align: center;
+    font-size:18px;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.tarjeta:hover{
+   background-color: rgb(202, 198, 198);
+   transition: all 1000ms;
+   -webkit-transition: all 1000ms;
+   -moz-transition: all 1000ms;
+   -ms-transition: all 1000ms;
+   -o-transition: all 1000ms;
+}
+
